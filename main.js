@@ -94,7 +94,7 @@ const colormode = () => {
 const apicall = async (val) => {
     //  APIKey = "5c1bd7ab180215147990c98e0f09de69";
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=a70917a8318b4db5b06185121232607&q=${val}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=a70917a8318b4db5b06185121232607&q=${val}&aqi=no`
   );
   const data = await response.json();
   return data;
