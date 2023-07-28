@@ -119,7 +119,7 @@ const getweather = async(e) => {
     const cloud = document.querySelector(".cloud");
  
   try {
-    const  data = await apicall(input.value);
+    const data = await apicall(input.value);
       console.log(data )
     place.innerText = data.location.name;
     country.innerText = data.location.country;
