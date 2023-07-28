@@ -4,11 +4,19 @@
 const formweather = document.querySelector(".form-weather");
 const hidden = document.querySelector(".hidden");
 const mode = document.querySelector(".check");
+const input = document.querySelector(".input");
 let day = "#3396a5";
 let night = "#464a60";
 let daybg = "#58BAC9";
 let nightbg = "#494E60";
-
+const w = window.innerWidth
+if(w<768){
+  console.log(input.placeholder)
+  
+  input.placeholder="search"
+}else{
+  input.placeholder="type city to search weather"
+}
 // alert
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 const appendAlert = (message, type) => {
@@ -103,7 +111,7 @@ const apicall = async (val) => {
 //  api calling
 const getweather = async(e) => {
     e.preventDefault();
-    const input = document.querySelector(".input");
+   
     const place = document.querySelector(".place");
     const weather = document.querySelector(".weather");
     const iconw = document.querySelector(".iconw");

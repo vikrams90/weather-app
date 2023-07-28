@@ -74,6 +74,10 @@
    
   }
 
+  img{
+    width: 50px;
+  }
+
 .bg-color{
     /* background-color: #464a60 !important; */
 }
@@ -81,4 +85,5 @@
 .bg-color{
   background-color:  #3396a5!important;
 }
+
 
